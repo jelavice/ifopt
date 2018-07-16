@@ -43,6 +43,13 @@ target_link_libraries(${LIB_IPOPT}-example
 )
 add_test(${LIB_IPOPT}-example ${LIB_IPOPT}-example)
 
+add_executable(${LIB_IPOPT}-example2 test/ex2_test_ipopt.cc)
+target_link_libraries(${LIB_IPOPT}-example2 
+  PRIVATE 
+    ${LIB_IPOPT}
+)
+add_test(${LIB_IPOPT}-example2 ${LIB_IPOPT}-example2)
+
 
 #############
 ## Install ##

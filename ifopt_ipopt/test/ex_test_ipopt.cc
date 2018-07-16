@@ -43,7 +43,7 @@ int main()
 
   // 2. choose solver and options
   IpoptSolver ipopt;
-  ipopt.SetOption("linear_solver", "mumps");
+  ipopt.SetOption("linear_solver", "ma57");
   ipopt.SetOption("jacobian_approximation", "exact");
 
   // 3 . solve
