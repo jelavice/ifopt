@@ -29,7 +29,7 @@ class Ex2Variables : public VariableSet
   // Every variable set has a name, here "var_set1". this allows the constraints
   // and costs to define values and Jacobians specifically w.r.t this variable set.
   Ex2Variables()
-      : ExVariables("var_set1")
+      : Ex2Variables("var_set1")
   {
   }
 
@@ -74,7 +74,7 @@ class Ex2Constraint : public ConstraintSet
 {
  public:
   Ex2Constraint()
-      : ExConstraint("constraints1and2")
+      : Ex2Constraint("constraints1and2")
   {
   }
 
@@ -131,7 +131,7 @@ class Ex2Cost : public CostTerm
 {
  public:
   Ex2Cost()
-      : ExCost("cost_term1")
+      : Ex2Cost("cost_term1")
   {
   }
   Ex2Cost(const std::string& name)

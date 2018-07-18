@@ -56,7 +56,7 @@ add_test(${LIB_IPOPT}-example2 ${LIB_IPOPT}-example2)
 #############
  # Copy library files to usr/local/lib/libifopt_ipopt.so
 install(
-  TARGETS ${LIB_IPOPT} ${LIB_IPOPT}-example
+  TARGETS ${LIB_IPOPT} ${LIB_IPOPT}-example ${LIB_IPOPT}-example2
   EXPORT  ${LIB_IPOPT}-targets
   ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
   LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
